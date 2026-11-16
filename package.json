@@ -1,0 +1,22 @@
+{
+  "name": "dayweave-core",
+  "version": "1.0.0",
+  "description": "A deterministic daily planning engine that balances deadlines, impact, effort and energy.",
+  "main": "./src/index.cjs",
+  "module": "./src/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    }
+  },
+  "files": ["src", "README.md", "LICENSE", "CHANGELOG.md"],
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "demo": "node examples/plan-my-day.cjs"
+  },
+  "keywords": ["productivity", "daily-planner", "task-prioritization", "focus", "scheduling"],
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}
